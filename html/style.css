@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8rem;
+    background-color: #303183;
+}
+
+.topbar {
+    position: fixed;
+    width: 100%;
+    /* background-color: rgba(0, 136, 208, 0.6); */
+}
+
+.topbar .nav {
+    /* position: relative; */
+    width: 80%;
+    display: flex;
+    margin: auto;
+    flex-direction: row-reverse;
+}
+
+.nav div a {
+    display: block;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.nav div a:hover {
+    background-color: #35a8e6;
+}
+
+.header {
+    background-image: url(img/violine.png);
+    background-color: #303183;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.container-header {
+    height: 100vh;
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.container-header .profil {
+    display: flex;
+    flex: 1;
+    order: 1;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.profil a {
+    display: block;
+    margin: auto;
+}
+
+.container-header .profil a img {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 1rem auto;
+}
+
+.container-header .username {
+    display: flex;
+    flex: 2;
+    order: 2;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.container-header .username h1 {
+    text-align: center;
+    margin: 2rem auto;
+    padding: 1px;
+    font-size: 5vmax;
+    color: whitesmoke;
+    display: block;
+}
+
+.btn {
+    font-size: 20px;
+    padding: 0.8em 1.2em;
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;
+    margin: 2rem auto;
+}
+
+.container-header .username button {
+    color: whitesmoke;
+    background-color: #ad7dcc;
+}
+
+.container-header .username button:hover {
+    background-color: #bf9ad8;
+}
+
+.main {
+    padding-top: 20px;
+    height: 1000px;
+}
+
+.card-container {
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-start;
+}
+
+.card-container .card {
+    border-radius: 10px;
+    margin: 20px;
+    overflow: hidden;
+    background-color: #282061;
+    flex: 1;
+    max-width: 370px;
+}
+
+.card .card-header {
+    height: 250px;
+    background-color: #ad7dcc;
+}
+
+.card .card-header img {
+    height: 250px;
+}
+
+.card .content {
+    text-align: center;
+    padding: 20px auto;
+    color: whitesmoke;
+}
+
+.card .content .btn {
+    color: whitesmoke;
+    background-color: #ad7dcc;
+}
+
+.card .content .btn:hover {
+    background-color: #bf9ad8;
+}
+
+/* FOR SMARTPHONE */
+
+@media (max-width: 600px) {
+    .card-container {
+        flex-direction: column;
+    }
+}
+
+/* CLEAR FIX */
+
+.cf:before, .cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
